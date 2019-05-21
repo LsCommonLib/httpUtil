@@ -31,4 +31,16 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+    // Retrofit库
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    //Gson converter
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    // Log信息拦截器
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    // 依赖以下两个库，会自动引用基础库与Android库防止rxjava内存泄漏
+    implementation 'com.trello.rxlifecycle2:rxlifecycle-components:2.1.0'
+    implementation 'com.trello.rxlifecycle2:rxlifecycle-navi:2.1.0'
 }
